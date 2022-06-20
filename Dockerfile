@@ -1,10 +1,9 @@
-FROM php:8.1-fpm
+FROM php:7.1-fpm
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
 RUN install-php-extensions bcmath
 RUN install-php-extensions bz2
 RUN install-php-extensions calendar
-RUN install-php-extensions csv
 RUN install-php-extensions decimal
 RUN install-php-extensions exif
 RUN install-php-extensions gd
