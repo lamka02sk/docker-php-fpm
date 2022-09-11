@@ -29,6 +29,8 @@ RUN install-php-extensions vips
 RUN install-php-extensions yaml
 RUN install-php-extensions zip
 
+RUN apt-get  update -y && apt search libvips
+
 RUN apt-get update -y && apt-get install --no-install-recommends --no-install-suggests -y \
     curl \
     git \
@@ -38,7 +40,8 @@ RUN apt-get update -y && apt-get install --no-install-recommends --no-install-su
     ssh \
     unzip \
     zip \
-    xz-utils && \
+    xz-utils \
+    libvips-tools && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get autoremove -y && \
     apt-get clean -y && \
