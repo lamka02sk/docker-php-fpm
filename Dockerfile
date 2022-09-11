@@ -29,8 +29,6 @@ RUN install-php-extensions vips
 RUN install-php-extensions yaml
 RUN install-php-extensions zip
 
-RUN apt-get  update -y && apt search libvips
-
 RUN apt-get update -y && apt-get install --no-install-recommends --no-install-suggests -y \
     curl \
     git \
