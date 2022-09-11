@@ -38,7 +38,8 @@ RUN apt-get update -y && apt-get install --no-install-recommends --no-install-su
     ssh \
     unzip \
     zip \
-    xz-utils && \
+    xz-utils \
+    libvips-tools && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get autoremove -y && \
     apt-get clean -y && \
