@@ -1,6 +1,8 @@
 FROM php:7.4-fpm
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
+ENV PHP_POOL_DIR=/usr/local/etc/php-fpm.d
+
 RUN install-php-extensions bcmath
 RUN install-php-extensions bz2
 RUN install-php-extensions calendar
@@ -52,7 +54,7 @@ RUN rclone config touch && \
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 COPY ./custom.ini $PHP_INI_DIR/conf.d/xy-custom.ini
-COPY ./pools/* $PHP_INI_DIR/pool.d/
+COPY ./pools/* $PHP_POOL_DIR/
 
 USER www-data
 
