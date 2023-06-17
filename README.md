@@ -2,8 +2,8 @@
 
 ![Docker Stars](https://img.shields.io/docker/stars/eworkssk/php-fpm?style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/eworkssk/php-fpm?style=for-the-badge)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/eworkssk/php-fpm/latest?style=for-the-badge)
-![Docker Image Version](https://img.shields.io/docker/v/eworkssk/php-fpm?label=PHP%20Version&style=for-the-badge)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/eworkssk/php-fpm/8.1?style=for-the-badge)
+![Docker Image Version](https://img.shields.io/docker/v/eworkssk/php-fpm/8.1?label=PHP%20Version&style=for-the-badge)
 
 **Automatic weekly updates**
 
