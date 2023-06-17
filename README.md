@@ -11,10 +11,6 @@
 
 ## Pull
 ```
-docker pull eworkssk/php-fpm:latest
-```
-or for use in production environment:
-```
 docker pull eworkssk/php-fpm:8.1
 ```
 
