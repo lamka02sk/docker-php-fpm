@@ -1,11 +1,13 @@
-FROM php:8.1-fpm
+FROM php:8.2-fpm
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
+
+ENV PHP_POOL_DIR=/usr/local/etc/php-fpm.d
 
 RUN install-php-extensions bcmath
 RUN install-php-extensions bz2
 RUN install-php-extensions calendar
 RUN install-php-extensions csv
-RUN install-php-extensions decimal
+# RUN install-php-extensions decimal
 RUN install-php-extensions exif
 RUN install-php-extensions gd
 RUN install-php-extensions geospatial
@@ -52,7 +54,7 @@ RUN rclone config touch && \
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 COPY ./custom.ini $PHP_INI_DIR/conf.d/xy-custom.ini
-COPY ./pools/* $PHP_INI_DIR/pool.d/
+COPY ./pools/* $PHP_POOL_DIR/
 
 USER www-data
 

@@ -5,6 +5,7 @@ on:
 
   push:
     branches: 
+      - "8.2"
       - "8.1"
       - "7.4"
       - "7.1"
@@ -17,9 +18,28 @@ on:
 
 jobs:
 
+  build_and_publish_82:
+    name: Build and publish Docker image to Docker Hub
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: "8.2"
+
+      - uses: mr-smithers-excellent/docker-build-push@v5
+        name: Build & push Docker image
+        with:
+          image: eworkssk/php-fpm
+          tags: 8.2, 8, latest
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
   build_and_publish_81:
     name: Build and publish Docker image to Docker Hub
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
@@ -31,14 +51,14 @@ jobs:
         name: Build & push Docker image
         with:
           image: eworkssk/php-fpm
-          tags: 8.1, 8, latest
+          tags: 8.1
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           
   build_and_publish_74:
     name: Build and publish Docker image to Docker Hub
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
@@ -57,7 +77,7 @@ jobs:
           
   build_and_publish_71:
     name: Build and publish Docker image to Docker Hub
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
