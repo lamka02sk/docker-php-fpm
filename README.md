@@ -39,6 +39,7 @@ csv
 ctype
 curl
 date
+decimal
 dom
 exif
 fileinfo
