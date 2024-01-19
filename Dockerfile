@@ -1,4 +1,4 @@
-FROM php:8.2-fpm
+FROM php:8.3-fpm
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
 
 ENV PHP_POOL_DIR=/usr/local/etc/php-fpm.d
@@ -7,14 +7,14 @@ RUN install-php-extensions bcmath
 RUN install-php-extensions bz2
 RUN install-php-extensions calendar
 RUN install-php-extensions csv
-# RUN install-php-extensions decimal
+RUN install-php-extensions decimal
 RUN install-php-extensions exif
 RUN install-php-extensions gd
 RUN install-php-extensions geospatial
 RUN install-php-extensions gettext
 RUN install-php-extensions gnupg
 RUN install-php-extensions http
-RUN install-php-extensions imagick
+# RUN install-php-extensions imagick # not supported for now
 RUN install-php-extensions imap
 RUN install-php-extensions intl
 RUN install-php-extensions mcrypt

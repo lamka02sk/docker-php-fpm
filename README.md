@@ -2,8 +2,8 @@
 
 ![Docker Stars](https://img.shields.io/docker/stars/eworkssk/php-fpm?style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/eworkssk/php-fpm?style=for-the-badge)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/eworkssk/php-fpm/8.2?style=for-the-badge)
-![Docker Image Version](https://img.shields.io/docker/v/eworkssk/php-fpm/8.2?label=PHP%20Version&style=for-the-badge)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/eworkssk/php-fpm/8.3?style=for-the-badge)
+![Docker Image Version](https://img.shields.io/docker/v/eworkssk/php-fpm/8.3?label=PHP%20Version&style=for-the-badge)
 
 **Automatic weekly updates**
 
@@ -15,7 +15,7 @@ docker pull eworkssk/php-fpm:latest
 ```
 or for use in production environment:
 ```
-docker pull eworkssk/php-fpm:8.2
+docker pull eworkssk/php-fpm:8.3
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ gnupg
 hash
 http
 iconv
-imagick
+# imagick # not supported with PHP 8.3 for now: https://github.com/mlocati/docker-php-extension-installer/pull/811
 imap
 inotify
 intl
