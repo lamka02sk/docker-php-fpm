@@ -34,11 +34,13 @@ docker run -v /my-app:/my-app -p 9000:9000 -p 9001:9001 --rm eworkssk/php-fpm
 bcmath
 bz2
 calendar
+cgi-fcgi
 Core
 csv
 ctype
 curl
 date
+decimal
 dom
 exif
 fileinfo
@@ -53,7 +55,6 @@ http
 iconv
 # imagick # not supported with PHP 8.3 for now: https://github.com/mlocati/docker-php-extension-installer/pull/811
 imap
-inotify
 intl
 json
 libxml
@@ -70,6 +71,7 @@ PDO_OCI
 pdo_sqlite
 Phar
 posix
+random
 raphf
 readline
 redis
@@ -92,7 +94,6 @@ yaml
 Zend OPcache
 zip
 zlib
-zstd
 
 [Zend Modules]
 Zend OPcache
