@@ -7,6 +7,8 @@
 
 **Automatic weekly updates**
 
+⚡ PHP 7.4, 8.2 and 8.3 now available for both `linux/amd64` and `linux/arm64/v8`
+
 💡 Do you need PHP CLI instead? Check out our [eworkssk/php-cli](https://github.com/Eworkssk/docker-php-cli) image.
 
 ## Pull
