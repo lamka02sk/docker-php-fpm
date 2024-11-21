@@ -2,12 +2,12 @@
 
 ![Docker Stars](https://img.shields.io/docker/stars/eworkssk/php-fpm?style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/eworkssk/php-fpm?style=for-the-badge)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/eworkssk/php-fpm/8.3?style=for-the-badge)
-![Docker Image Version](https://img.shields.io/docker/v/eworkssk/php-fpm/8.3?label=PHP%20Version&style=for-the-badge)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/eworkssk/php-fpm/8.4?style=for-the-badge)
+![Docker Image Version](https://img.shields.io/docker/v/eworkssk/php-fpm/8.4?label=PHP%20Version&style=for-the-badge)
 
 **Automatic weekly updates**
 
-⚡ PHP 7.4, 8.1, 8.2 and 8.3 now available for both `linux/amd64` and `linux/arm64/v8`
+⚡ PHP 7.4, 8.1, 8.2, 8.3 and 8.4 now available for both `linux/amd64` and `linux/arm64/v8`
 
 💡 Do you need PHP CLI instead? Check out our [eworkssk/php-cli](https://github.com/Eworkssk/docker-php-cli) image
 
@@ -19,7 +19,7 @@ docker pull eworkssk/php-fpm:latest
 ```
 or for specific PHP version:
 ```
-docker pull eworkssk/php-fpm:8.3
+docker pull eworkssk/php-fpm:8.4
 ```
 
 ## Usage
