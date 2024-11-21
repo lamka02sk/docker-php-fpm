@@ -7,15 +7,17 @@
 
 **Automatic weekly updates**
 
-⚡ PHP 7.4, 8.2 and 8.3 now available for both `linux/amd64` and `linux/arm64/v8`
+⚡ PHP 7.4, 8.1, 8.2 and 8.3 now available for both `linux/amd64` and `linux/arm64/v8`
 
-💡 Do you need PHP CLI instead? Check out our [eworkssk/php-cli](https://github.com/Eworkssk/docker-php-cli) image.
+💡 Do you need PHP CLI instead? Check out our [eworkssk/php-cli](https://github.com/Eworkssk/docker-php-cli) image
+
+⚠️ PHP 7.1 build is now unsupported and weekly updates are disabled
 
 ## Pull
 ```
 docker pull eworkssk/php-fpm:latest
 ```
-or for use in production environment:
+or for specific PHP version:
 ```
 docker pull eworkssk/php-fpm:8.3
 ```
@@ -55,7 +57,7 @@ gnupg
 hash
 http
 iconv
-# imagick # not supported with PHP 8.3 for now: https://github.com/mlocati/docker-php-extension-installer/pull/811
+imagick
 imap
 intl
 json
