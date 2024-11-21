@@ -28,6 +28,10 @@ Mount your web application anywhere and expose ports:
 docker run -v /my-app:/my-app -p 9000:9000 -p 9001:9001 --rm eworkssk/php-fpm
 ```
 
+## Configuration
+PHP configuration located at `/usr/local/etc/php/`
+PHP-FPM configuration located at `/usr/local/etc/php-fpm.d`
+
 ## Exposed ports
 - `9000`: PHP-FPM server
 - `9001`: PHP-FPM server status
