@@ -67,7 +67,6 @@ intl
 json
 libxml
 mbstring
-mcrypt
 mysqli
 mysqlnd
 oci8

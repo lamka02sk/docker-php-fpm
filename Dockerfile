@@ -17,7 +17,6 @@ RUN install-php-extensions http
 RUN install-php-extensions imagick
 RUN install-php-extensions imap
 RUN install-php-extensions intl
-RUN install-php-extensions mcrypt
 RUN install-php-extensions mysqli
 RUN install-php-extensions oci8
 RUN install-php-extensions opcache
