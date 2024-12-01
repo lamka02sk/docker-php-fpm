@@ -61,7 +61,7 @@ gnupg
 hash
 http
 iconv
-#imagick
+imagick
 imap
 intl
 json
@@ -76,6 +76,7 @@ PDO
 pdo_mysql
 PDO_OCI
 pdo_sqlite
+pdo_sqlsrv
 Phar
 posix
 random
@@ -91,6 +92,7 @@ sodium
 SPL
 sqlite3
 ssh2
+sqlsrv
 standard
 tokenizer
 vips

@@ -14,7 +14,7 @@ RUN install-php-extensions geospatial
 RUN install-php-extensions gettext
 RUN install-php-extensions gnupg
 RUN install-php-extensions http
-#RUN install-php-extensions imagick
+RUN install-php-extensions imagick
 RUN install-php-extensions imap
 RUN install-php-extensions intl
 RUN install-php-extensions mysqli
@@ -22,10 +22,12 @@ RUN install-php-extensions oci8
 RUN install-php-extensions opcache
 RUN install-php-extensions pdo_mysql
 RUN install-php-extensions pdo_oci
+RUN install-php-extensions pdo_sqlsrv
 RUN install-php-extensions redis
 RUN install-php-extensions soap
 RUN install-php-extensions sockets
 RUN install-php-extensions ssh2
+RUN install-php-extensions sqlsrv
 RUN install-php-extensions vips
 RUN install-php-extensions yaml
 RUN install-php-extensions zip
