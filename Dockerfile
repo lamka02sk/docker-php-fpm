@@ -7,7 +7,7 @@ RUN install-php-extensions bcmath
 RUN install-php-extensions bz2
 RUN install-php-extensions calendar
 RUN install-php-extensions csv
-# RUN install-php-extensions decimal
+RUN install-php-extensions decimal
 RUN install-php-extensions exif
 RUN install-php-extensions gd
 RUN install-php-extensions geospatial
@@ -23,10 +23,12 @@ RUN install-php-extensions oci8
 RUN install-php-extensions opcache
 RUN install-php-extensions pdo_mysql
 RUN install-php-extensions pdo_oci
+RUN install-php-extensions pdo_sqlsrv
 RUN install-php-extensions redis
 RUN install-php-extensions soap
 RUN install-php-extensions sockets
 RUN install-php-extensions ssh2
+RUN install-php-extensions sqlsrv
 RUN install-php-extensions vips
 RUN install-php-extensions yaml
 RUN install-php-extensions zip
